@@ -1,5 +1,5 @@
 # tools/buscar_contexto.py  (por exemplo)
-from crewai.tools import BaseTool  
+from crewai.tools.tool import Tool  
 from pydantic import BaseModel, Field
 from typing import Type
 import os, time, logging, asyncio
@@ -22,7 +22,7 @@ client    = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 embedding_model = os.getenv("OPENAI_MODEL", "text-embedding-3-small")
 
 # --------------------------------------------------------------------  MODELOS
-class BuscarContextoInput(BaseModel):
+class BuscarContextoTool(Tool): 
     pergunta: str = Field(..., description="Pergunta do usuário sobre o Diário Oficial")
 
 class BuscarContextoTool(Tool):

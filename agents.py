@@ -2,12 +2,7 @@ from crewai import Agent
 from tools.supabase_tool import BuscarContextoTool
 from langchain_openai import ChatOpenAI
 
-buscar_contexto_tool = BuscarContextoTool()            # ← instância pronta
-__all__ = [
-    "agente_tecnico",
-    "agente_cidadao",
-    "buscar_contexto_tool",
-]
+buscar_contexto_tool = BuscarContextoTool()
 
 # Modelos com calibração de temperatura
 llm_interprete = ChatOpenAI(model="gpt-4o-mini", temperature=0.4, max_tokens=1000)
