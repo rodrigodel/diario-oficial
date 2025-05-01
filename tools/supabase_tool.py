@@ -1,5 +1,5 @@
 # tools/buscar_contexto.py  (por exemplo)
-from crewai.tools.tool import Tool
+from crewai.tools import BaseTool  
 from pydantic import BaseModel, Field
 from typing import Type
 import os, time, logging, asyncio
