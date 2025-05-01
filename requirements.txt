@@ -1,4 +1,4 @@
-crewai==0.100.1
+crewai==0.35.8
 langchain
 langchain-openai
 openai
