@@ -1,9 +1,6 @@
 --prefer-binary            # se já estiver, mantenha
-setuptools>=68,<70         # garante pkg_resources em Py 3.12
-crewai==0.11.2
-langchain==0.1.13
-langchain-openai==0.0.5
-openai==1.10.0
+crewai==0.11.2           # ou a versão que já resolveu seus imports
+langchain-openai==0.0.5  # compatível com crewai 0.11.x
+streamlit==1.25.0        # já testado; usa Pillow <10
 supabase==2.0.0
 python-dotenv
-streamlit==1.25.0
