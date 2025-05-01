@@ -1,5 +1,5 @@
 crewai==0.11.2
-langchain-openai==0.0.5   # compatível
-streamlit==1.25.0         # wheel de Pillow pronta
+langchain-openai==0.0.5
+streamlit==1.25.0          # já inclui Pillow binária (<10)
 supabase==2.0.0
 python-dotenv

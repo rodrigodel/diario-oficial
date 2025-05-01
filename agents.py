@@ -1,6 +1,5 @@
 from crewai import Agent
 from tools.supabase_tool import BuscarContextoTool
-buscar_contexto_tool = BuscarContextoTool()
 from langchain_openai import ChatOpenAI
 
 buscar_contexto_tool = BuscarContextoTool()            # ← instância pronta
