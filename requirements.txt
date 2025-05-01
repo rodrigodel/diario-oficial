@@ -1,5 +1,7 @@
+# versões que de fato possuem wheels prontos para Python 3.12
+pillow==10.2.0          # wheel prêt-à-porter → não compila
+streamlit==1.34.0       # ≥1.28 aceita Pillow 10.*, <11
 crewai==0.11.2
 langchain-openai==0.0.5
-streamlit==1.25.0          # já inclui Pillow binária (<10)
 supabase==2.0.0
 python-dotenv
