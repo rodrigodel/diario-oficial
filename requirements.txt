@@ -1,0 +1,7 @@
+crewai==0.111.1
+langchain
+langchain-openai
+openai
+supabase
+python-dotenv
+streamlit
