@@ -1,5 +1,5 @@
 # tools/buscar_contexto.py  (por exemplo)
-from crewai.tools import BaseTool
+from crewai.tools.tool import Tool
 from pydantic import BaseModel, Field
 from typing import Type
 import os, time, logging, asyncio
@@ -25,7 +25,7 @@ embedding_model = os.getenv("OPENAI_MODEL", "text-embedding-3-small")
 class BuscarContextoInput(BaseModel):
     pergunta: str = Field(..., description="Pergunta do usuário sobre o Diário Oficial")
 
-class BuscarContextoTool(BaseTool):
+class BuscarContextoTool(Tool):
     name: str = "buscar_publicacoes_oficiais"
     description: str = "Busca trechos vetorizados do Diário Oficial com base em uma pergunta específica"
     args_schema: Type[BaseModel] = BuscarContextoInput
